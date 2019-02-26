@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="css/fontawesome.min.css"/> -->
+    <link rel="stylesheet" href="css/weather-icons.min.css"/>
+    <link rel="stylesheet" href="css/weather-icons-wind.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="app">
+            <div class="header">
+                    <div class="weatherType"></div>
+                <img src="img/nbackground.jpeg" alt="">
+                <div id="container1" class="row form-group form-inline">
+                    <input class="form-control" id="city" type="text" placeholder="city">
+                    <button class="btn btn-primary" type="button" id="submitWeather">Search</button>
+                </div>
+                <span class="city">
+                    <!-- Bucharest, Romania -->
+                    <i class="fa fa-map-marker"></i>
+                    <span class="today">Today</span>
+                </span>
+                <span class="weather">
+                    <span class="temp">
+                        <!-- <sup>&deg;</sup>
+                            <span class="unit">c</span> -->
+                        </span>
+                    <span class="wind-scale">
+                        <table>
+                            <tr>
+                                <td>Wind Direction</td>
+                                <td>
+                                    <i class="wi wi-wind towards-45-deg"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Wind Scale</td>
+                                <td>
+                                    <i class="wi wi-wind-beaufort-7"></i>
+                                </td>
+                            </tr>
+                        </table>    
+                    </span>
+                    <div id="weather"></div>
+                    <!-- <i  class="wi wi-night-sleet"></i> -->
+                    <span class="time">
+                        <i class="wi wi-time-3"></i>
+                    </span>
+                    <span class="day">Monday</span>
+                </span>
+            </div>
+           <div class="body">
+               <span class="title">
+                   Weather Stats
+               </span>
+               <div class="graph">
+                  <!-- <ul>
+                      <li class="graph-knob-mt-23">
+                          <span class="graph-temp">
+                            <i class="wi wi-night-cloudy"></i>
+                            26<sup>&deg;</sup>
+                          </span>
+                          23
+                      </li>
+                      <li class="graph-knob-mt-20">
+                        <span class="graph-temp">
+                          <i class="wi wi-lightning"></i>
+                          20<sup>&deg;</sup>
+                        </span>
+                        19
+                    </li>
+                    <li class="graph-knob-mt-26">
+                        <span class="graph-temp">
+                          <i class="wi wi-night-cloudy-gusts"></i>
+                          26<sup>&deg;</sup>
+                        </span>
+                        24
+                    </li>
+                    <li class="graph-knob-mt-27">
+                        <span class="graph-temp">
+                          <i class="wi wi-night-sleet"></i>
+                          27<sup>&deg;</sup>
+                        </span>
+                        25
+                    </li>
+                    <li class="graph-knob-mt-20">
+                        <span class="graph-temp">
+                          <i class="wi wi-night-alt-thunderstorm"></i>
+                          16<sup>&deg;</sup>
+                        </span>
+                        23
+                    </li>
+                    <li class="graph-knob-mt-18">
+                        <span class="graph-temp">
+                          <i class="wi wi-smoke"></i>
+                          21<sup>&deg;</sup>
+                        </span>
+                        29
+                    </li>
+                  </ul> -->
+               </div>
+           </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="script.js"></script>
+</body> 
+</html>
